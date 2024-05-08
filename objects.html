@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        /*----object example1
+        let marker={
+            width : 2,
+            height : 4,
+            color : 'blue'
+
+        }
+        console.log(marker)
+        console.log(typeof(marker))
+
+        console.log(marker.width)
+        console.log(marker.height)
+       console.log(marker.color)
+        ------*/
+
+       /*----student example2 
+       let student={
+        studentId : 101,
+        email : "abc@gmail.com",
+        phoneNumber : "9876543210",
+        location : 'hyd'
+       }
+
+       console.log(student)
+       console.log(`student id is ${student.studentId} and email is with ${student.email} located in ${student.location}`)
+       ------*/
+
+       /*----
+       let student={
+        studentId : 101,
+        email : "abc@gmail.com",
+        phoneNumber : "9876543210",
+        location : 'hyd'
+       }
+
+       /*----accessing or fetching----*
+       console.log(student.studentId)
+       console.log(student['studentId'])
+
+       /*-----updating -----*
+       student.studentId=102
+       console.log(student)
+
+       /*---adding----*
+       student.studentName="abc"
+       console.log(student)
+
+       delete student.phoneNumber
+       console.log(student)
+       -----*/
+
+       /*------converting objects into arrays
+       let student={
+        studentId : 101,
+        email : "abc@gmail.com",
+        phoneNumber : "9876543210",
+        location : 'hyd'
+       }
+       console.log(typeof(student))
+
+       let a=Object.keys(student)
+       console.log(a)
+       console.log(typeof(a))
+
+       let b=Object.values(student)
+       console.log(b)
+
+       let c=Object.entries(student)
+       console.log(c)
+       console.log(c.flat())
+       c.map(num =>console.log(num))
+       ------*/
+
+       /*----by using object constructor----*/
+       let a=new Object()
+       a.studentName="abc"  //----->1way---->adding 
+       a['email']="abc@gmail.com" //---->2way---->adding
+       console.log(a)
+
+
+       console.log(a.studentName)//--->1way accessing
+       console.log(a['email']) //--->2way accessing
+
+       a.email="john@gmail.com" //--->updating
+       console.log(a)
+
+       a.location="hyd"
+       console.log(a)
+
+       delete a.location //--->deleting
+       console.log(a)
+
+       /*---converting string to object
+       let x="hello"
+       console.log(x)
+       console.log(typeof(x))
+
+       let y=new Object(x)  //--->1way
+       console.log(y)
+       console.log(typeof(y))
+
+       let z=new String("hello")  //--->2way
+       console.log(z)
+       console.log(typeof(z))
+       ------*/
+
+       /*-----converting boolean to object
+       let x1=true
+       console.log(x1)
+       console.log(typeof(x1))
+
+       let y1=new Object(x1)  //-->1way
+       console.log(y1)
+       console.log(typeof(y1))
+
+       let z1= new Boolean(true)  //---->2way
+       console.log(z1)
+       console.log(typeof(z1))
+       ------*/
+
+
+       /*-----by using object constructor function----
+       function student(rollno,name,email,phoneNumber,location,school)
+       {
+            this.rollno=rollno
+            this.name=name
+            this.email=email
+            this.phoneNumber=phoneNumber
+            this.location=location
+            this.school="delhi world school"
+
+       }
+
+       let s1=new student(101,"john","john@gmail.com",9876543210,"hyd")
+       console.log(s1)
+
+       let s2=new student(102,"ram","ram@gmail.com",1234567890,"chennai")
+       console.log(s2)
+       ------*/
+    </script>
+</body>
